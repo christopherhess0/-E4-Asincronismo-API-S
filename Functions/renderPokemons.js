@@ -19,7 +19,7 @@ export const renderPokemons = async (e, data) => {
     } = pokemon;
     console.log(pokeName)
     const htmlContent = `<div class="cardPokemon">
-  <p class="pokemonName">${pokeName}</p>
+  <p class="pokemonName">${pokeName.charAt(0).toUpperCase() + pokeName.slice(1)}</p>
   <img src="${pokeImage}" alt="" class="imagePokemon">
   <p class="">Tipo: ${pokeType.charAt(0).toUpperCase() + pokeType.slice(1)}</p>
   <p class="">Altura: ${pokeHeight / 10} mts</p>
