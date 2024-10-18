@@ -1,8 +1,10 @@
 import { getData } from "./API/data.js";
+import { renderPokemons} from "./Functions/renderPokemons.js"
 
-const inputId = document.querySelector('.inputId')
 const buttonRender = document.querySelector('.buttonAdd')
-const cardContainer = document.querySelector('cardContainer')
+
+const data = getData()
 
 
-getData();
+
+buttonRender.addEventListener('click', renderPokemons)
