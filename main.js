@@ -1,9 +1,8 @@
-import { getData } from "./API/data";
+import { getData } from "./API/data.js";
 
-
-document.querySelector('.inputId')
-document.querySelector('.buttonAdd')
-document.querySelector('cardContainer')
+const inputId = document.querySelector('.inputId')
+const buttonRender = document.querySelector('.buttonAdd')
+const cardContainer = document.querySelector('cardContainer')
 
 
 getData();
