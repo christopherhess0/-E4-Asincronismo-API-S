@@ -21,9 +21,9 @@ export const renderPokemons = async (e, data) => {
     const htmlContent = `<div class="cardPokemon">
   <p class="pokemonName">${pokeName}</p>
   <img src="${pokeImage}" alt="" class="imagePokemon">
-  <p class="">Tipo: ${pokeType}</p>
-  <p class="">Peso: ${pokeHeight / 10} mts</p>
-  <p class="">Altura: ${pokeWeight / 10} kg</p>
+  <p class="">Tipo: ${pokeType.charAt(0).toUpperCase() + pokeType.slice(1)}</p>
+  <p class="">Altura: ${pokeHeight / 10} mts</p>
+  <p class="">Peso: ${pokeWeight / 10} kg</p>
 </div>`;
 
 cardContainer.innerHTML = htmlContent;
