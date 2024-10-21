@@ -8,3 +8,9 @@ const data = getData()
 
 
 buttonRender.addEventListener('click', renderPokemons)
+
+
+import { maxPokeShowError } from "./Functions/maxPokeShowError.js";
+maxPokeShowError()
+import { removePokeError } from "./Functions/removePokeError.js";
+removePokeError()

@@ -11,19 +11,20 @@
         <label for="inputId" style="font-family: 'Arial', sans-serif;">Ingrese ID Pokedex!</label>
         <input type="number" name="" id="" class="inputId">
         <button class="buttonAdd">Renderizar Pokemon</button>
-        <div class="errorContainer">Error al encontrar el Pokemon!</div>
+        <div class="errorContainer hidden">Error al encontrar el Pokémon!</div>
+
     </form>
     <section class="pokemons">
         <div class="cardContainer">
         </div>
     </section>
-    
+    <script type="module" src="./Functions/removePokeError.js"></script>
+    <script type="module" src="./Functions/maxPokeShowError.js"></script>
     <script type="module" src="./Functions/captureValue.js"></script>
     <script type="module" src="./Functions/renderPokemons.js"></script>
     <script type="module" src="./API/data.js"></script>
     <script type="module" src="./main.js"></script>
-    <script type="module" src="./Functions/numeroMaxPokemones.js"></script>
-    <script type="module" src="./Functions/pokeErrors.js"></script>
+    
 
 </body>
 </html>

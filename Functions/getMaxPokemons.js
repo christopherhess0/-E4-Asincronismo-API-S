@@ -8,5 +8,6 @@ export const getMaxPokemons = async () => {
     } catch (error) {
         console.error('Error al obtener los Pokémon:', error);
         return null;
+
     }
 };
